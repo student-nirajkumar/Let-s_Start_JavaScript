@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <section>
+
+        <!-- LEFT -->
+        <div class="left">
+
+            <div class="top">
+                <label for="image-input" class="btn choose">
+                    Choose image
+                    <input type="file" id="image-input" hidden>
+                </label>
+
+                <button class="btn reset">Reset</button>
+                <button class="btn download">Download</button>
+            </div>
+
+            <div class="bottom">
+                <div class="preview">
+                    <p>Image</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+
+            <h2>Filters</h2>
+
+            <div class="filters">
+
+                <div class="filter"><label>Brightness</label><input type="range"></div>
+                <div class="filter"><label>Contrast</label><input type="range"></div>
+                <div class="filter"><label>Exposure</label><input type="range"></div>
+                <div class="filter"><label>Saturation</label><input type="range"></div>
+                <div class="filter"><label>Hue Rotate</label><input type="range"></div>
+                <div class="filter"><label>Blur</label><input type="range"></div>
+                <div class="filter"><label>Grayscale</label><input type="range"></div>
+                <div class="filter"><label>Sepia</label><input type="range"></div>
+                <div class="filter"><label>Opacity</label><input type="range"></div>
+                <div class="filter"><label>Invert</label><input type="range"></div>
+
+            </div>
+
+            <div class="presets">
+                <h3>Preset Filters</h3>
+
+                <div class="preset-grid">
+                    <button>Original</button>
+                    <button>Vintage</button>
+                    <button>Cold</button>
+                    <button>Warm</button>
+                    <button>Dramatic</button>
+                    <button>Dark</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>
